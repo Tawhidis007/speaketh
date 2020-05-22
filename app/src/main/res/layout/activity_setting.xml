@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gr"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="6dp"
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="6dp"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="center"
+                android:text="Your Profile"
+                android:textSize="30sp"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/profile_image"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="20dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"/>
+
+            <EditText
+                android:drawableLeft="@drawable/settings_name"
+                android:textAlignment="center"
+                android:hint="Enter Your Full Name Here"
+                android:id="@+id/set_user_name"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:drawableLeft="@drawable/settings_status"
+                android:textAlignment="center"
+                android:hint="Write Something About Yourself"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/set_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_marginTop="12dp"
+                android:textColor="@color/design_default_color_background"
+                android:background="@drawable/buttons"
+                android:text="Update"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/update_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

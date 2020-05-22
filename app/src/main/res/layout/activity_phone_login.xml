@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="1"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".PhoneLoginActivity">
+
+    <LinearLayout
+        android:layout_weight=".45"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="24dp"
+        android:orientation="vertical"
+        android:layout_weight=".55"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:paddingLeft="4dp"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="30sp"
+            android:text="Login With OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:drawableRight="@drawable/phune"
+            android:layout_marginTop="20dp"
+            android:id="@+id/phone_number_input"
+            android:inputType="phone"
+            android:hint="Phone number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_verified_user_black_24dp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/verification_code"
+            android:inputType="phone"
+            android:hint="Enter verification code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorAccent2"
+            android:layout_marginTop="6dp"
+            android:text="Get Verification Code"
+            android:id="@+id/get_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorAccent2"
+            android:layout_marginTop="6dp"
+            android:visibility="gone"
+            android:text="Verify"
+            android:id="@+id/submit_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

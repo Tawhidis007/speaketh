@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "149675262219",
+    "firebase_url": "https://speaketh-8796a.firebaseio.com",
+    "project_id": "speaketh-8796a",
+    "storage_bucket": "speaketh-8796a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149675262219:android:9f8f1430fbe70d3b39620e",
+        "android_client_info": {
+          "package_name": "com.hriportfolio.speaketh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149675262219-8dv60n3rdvl5hmm2bdb11jkqm9ik1jsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hriportfolio.speaketh",
+            "certificate_hash": "a977fd6a61a233c66bc657141fbe22c9347dd248"
+          }
+        },
+        {
+          "client_id": "149675262219-ju3c37p675b1fv3c89veh8907s9grc57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZF_7NVp1U9qJeapPJ7UrzY8Vru2jfHDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149675262219-ju3c37p675b1fv3c89veh8907s9grc57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

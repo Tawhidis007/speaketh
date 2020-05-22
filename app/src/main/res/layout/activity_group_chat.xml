@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/constraint_parent"
+    tools:context=".GroupChatActivity">
+
+    <include
+        android:id="@+id/group_chat_bar_layout"
+        layout="@layout/app_bar_layout"
+        />
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:background="@drawable/sender_messages_layout"
+            android:layout_weight=".9"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@id/group_chat_bar_layout"
+            android:id="@+id/my_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/profile_image"
+                    android:id="@+id/sender_pro_pic"
+                    android:layout_height="40dp"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:paddingRight="12dp"
+                        android:paddingLeft="12dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:id="@+id/group_chat_text_display"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_weight=".1"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/my_scroll_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <EditText
+                android:textAlignment="center"
+                android:background="@color/colorAccent"
+                android:layout_weight=".9"
+                android:hint="Type your message"
+                android:id="@+id/userInputInGroupChat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <ImageButton
+                android:layout_weight=".1"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_send_black_24dp"
+                android:id="@+id/sendMessageOfGroup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="1"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_weight=".45"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="24dp"
+        android:orientation="vertical"
+        android:layout_weight=".55"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:paddingLeft="4dp"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="30sp"
+            android:text="Register Now!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_email_black_24dp"
+            android:layout_marginTop="6dp"
+            android:hint="Enter Email"
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+            android:layout_marginTop="6dp"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorAccent2"
+            android:layout_marginTop="6dp"
+            android:id="@+id/register_user_button"
+            android:text="Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorAccent2"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:id="@+id/already_have_account_button"
+            android:text="ALREADY HAVE ACCOUNT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

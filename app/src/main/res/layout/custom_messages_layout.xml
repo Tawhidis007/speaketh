@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:id="@+id/message_profile_image"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile_image"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:padding="12dp"
+        android:id="@+id/receiver_msg_text"
+        android:textSize="14sp"
+        android:text="Receiver Msg here"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/receiver_messages_layout"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/messageSenderImageView"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/messageReceiverImageView"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+
+        android:padding="12dp"
+        android:id="@+id/sender_msg_text"
+        android:textSize="14sp"
+        android:text="Sender Msg here"
+        android:background="@drawable/sender_messages_layout"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="@+id/receiver_msg_text"
+       android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
